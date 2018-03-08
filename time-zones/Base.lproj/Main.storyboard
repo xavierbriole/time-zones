@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iKJ-ju-9m4">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Time Zones Table View Controller-->
+        <scene sceneID="DHQ-nR-gfG">
+            <objects>
+                <viewController id="iKJ-ju-9m4" customClass="TimeZonesTableViewController" customModule="time_zones" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ruh-9N-BTY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ia2-II-gM2">
+                                <rect key="frame" x="16" y="217" width="343" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="g3F-c2-9E3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="54"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tokyo, Japan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fl2-ss-hCx">
+                                <rect key="frame" x="16" y="134" width="343" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="tCf-Jd-oBb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="23"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by Xavier Briole © 2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvp-vP-Iz4">
+                                <rect key="frame" x="16" y="708" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="tM8-26-ktM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="version 1.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Daa-lO-pI2">
+                                <rect key="frame" x="16" y="727" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Axx-TJ-BQx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2739865642" green="0.36718270060000002" blue="0.51573941489999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jvp-vP-Iz4" firstAttribute="leading" secondItem="ruh-9N-BTY" secondAttribute="leadingMargin" id="0XM-iZ-HRt"/>
+                            <constraint firstItem="Jvp-vP-Iz4" firstAttribute="trailing" secondItem="ruh-9N-BTY" secondAttribute="trailingMargin" id="5Dj-SP-DK4"/>
+                            <constraint firstItem="Fl2-ss-hCx" firstAttribute="trailing" secondItem="ia2-II-gM2" secondAttribute="trailing" id="A1f-39-caD"/>
+                            <constraint firstItem="ia2-II-gM2" firstAttribute="leading" secondItem="Jvp-vP-Iz4" secondAttribute="leading" id="Bsc-8b-feT"/>
+                            <constraint firstItem="Jvp-vP-Iz4" firstAttribute="trailing" secondItem="Daa-lO-pI2" secondAttribute="trailing" id="NDL-II-nHK"/>
+                            <constraint firstItem="Jvp-vP-Iz4" firstAttribute="leading" secondItem="Daa-lO-pI2" secondAttribute="leading" id="XXn-7W-3a0"/>
+                            <constraint firstItem="DYn-Hr-sEg" firstAttribute="bottom" secondItem="Daa-lO-pI2" secondAttribute="bottom" constant="30" id="Xka-eP-Fhz"/>
+                            <constraint firstItem="Fl2-ss-hCx" firstAttribute="top" secondItem="DYn-Hr-sEg" secondAttribute="top" constant="90" id="adI-fA-tKo"/>
+                            <constraint firstItem="DYn-Hr-sEg" firstAttribute="bottom" secondItem="Jvp-vP-Iz4" secondAttribute="bottom" constant="49" id="e6Q-h4-Mxz"/>
+                            <constraint firstItem="ia2-II-gM2" firstAttribute="top" secondItem="Fl2-ss-hCx" secondAttribute="bottom" constant="25" id="pVl-Ah-Xqf"/>
+                            <constraint firstItem="Fl2-ss-hCx" firstAttribute="leading" secondItem="ia2-II-gM2" secondAttribute="leading" id="r72-Cd-6YF"/>
+                            <constraint firstItem="ia2-II-gM2" firstAttribute="trailing" secondItem="Jvp-vP-Iz4" secondAttribute="trailing" id="x01-ZX-KiI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DYn-Hr-sEg"/>
+                    </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="ia2-II-gM2" id="LGo-ku-rHh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ym1-ka-6IZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2021.5999999999999" y="-83.497536945812811"/>
+        </scene>
+    </scenes>
+</document>
